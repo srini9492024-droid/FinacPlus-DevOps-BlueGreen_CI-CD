@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout Source (FinacPlus)') {
             steps {
-                git 'https://github.com/srini9492024-droid/FinacPlus-DevOps-BlueGreen_CI-CD.git'
+                git branch: 'main', url: 'https://github.com/srini9492024-droid/FinacPlus-DevOps-BlueGreen_CI-CD.git'
             }
         }
 
