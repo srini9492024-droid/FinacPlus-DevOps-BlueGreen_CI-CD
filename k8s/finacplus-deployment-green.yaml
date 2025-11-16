@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: finacplus-green
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: finacplus
+      version: green
+  template:
+    metadata:
+      labels:
+        app: finacplus
+        version: green
+    spec:
+      containers:
+      - name: finacplus
+        image: srinivas202/finacplus-bluegreen-app:latest
+        env:
+        - name: VERSION
+          value: "green"
+        ports:
+        - containerPort: 9090
+
