@@ -19,6 +19,7 @@ Developer → GitHub → Jenkins → DockerHub → Minikube (K8s)
                         → Blue Deployment
 ```
 
+
 ---
 
 # 📌 Pipeline Flow
