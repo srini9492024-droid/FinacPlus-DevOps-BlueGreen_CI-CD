@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: finacplus
-        image: /srinivas202/finacplus-bluegreen-app:latest
+        image: srinivas202/finacplus-bluegreen-app:latest
         env:
         - name: VERSION
           value: "blue"
