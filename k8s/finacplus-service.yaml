@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: finacplus-service
 spec:
+  type: LoadBalancer
   selector:
     app: finacplus
     version: green
