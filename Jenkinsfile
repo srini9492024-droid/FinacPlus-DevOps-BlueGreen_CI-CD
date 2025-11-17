@@ -53,6 +53,7 @@ pipeline {
         stage('Switch Traffic to GREEN') {
             steps {
                 sh '''
+		kubectl delete -f k8s/finacplus-service.yaml --ignore-not-found=true
                 kubectl apply -f k8s/finacplus-service.yaml
                 '''
             }
